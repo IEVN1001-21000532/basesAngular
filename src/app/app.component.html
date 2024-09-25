@@ -1,31 +1,7 @@
-<h1>holaaa</h1>
 
-<div>
-    {{title}}
+
+<div class="container">
+<div class="row">
+<app-Ejemplo1></app-Ejemplo1>
 </div>
-<div>
-    la suma de 2 + 2 {{2+2}}
-
-   
-    <br>
-    el doble del numero es {{duplicarNumero(3)}}
-</div>
-<div>
-    <h2> 
-        Matricula :{{alumno.matricula}}
-    </h2>
-    <h2>
-        Nombre: {{alumno.nombre | uppercase}}
-    </h2>
-    <h2>
-       Fecha: {{alumno.fechaInscrito | date:"dd-MM-yy"}}
-    </h2>
-    <h2>
-        pago: {{alumno.pago | currency}}
-    </h2>
-
-    <div>
-        <hr>
-        <app-product-list></app-product-list>
-    </div>
 </div>
