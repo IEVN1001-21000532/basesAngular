@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductoFilterPipe } from './product/producto-filter.pipe';
-import { Ejemplo1Component } from './formularios/ejemplo1/ejemplo1.component';
+import { ZodiacoComponent } from './formularios/zodiaco/zodiaco.component';
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import { Ejemplo1Component } from './formularios/ejemplo1/ejemplo1.component';
     AppComponent,
     ProductListComponent,
     ProductoFilterPipe,
-    Ejemplo1Component,
+    ZodiacoComponent,
     
   ],
   imports: [
@@ -29,3 +29,5 @@ import { Ejemplo1Component } from './formularios/ejemplo1/ejemplo1.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

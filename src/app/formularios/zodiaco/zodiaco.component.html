@@ -1,0 +1,55 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<head>
+    <link rel="stylesheet" href="/src/app/app.component.css">
+</head>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+
+<div class="container">
+    <div class="left">
+      <h2>Datos Personales</h2>
+      <form [formGroup]="formulario" (ngSubmit)="imprimir()">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" formControlName="nombre" type="text">
+  
+        <label for="apaterno">Primer apellido</label>
+        <input id="apaterno" formControlName="apaterno" type="text">
+  
+        <label for="amaterno">Segundo apellido</label>
+        <input id="amaterno" formControlName="amaterno" type="text">
+  
+        <label for="dia">Día</label>
+        <input id="dia" formControlName="dia" type="number">
+  
+        <label for="mes">Mes</label>
+        <input id="mes" formControlName="mes" type="number">
+  
+        <label for="anio">Año</label>
+        <input id="anio" formControlName="anio" type="number">
+  
+        <label>Sexo</label>
+        <label>
+          <input type="radio" formControlName="sexo" value="Masculino"> Masculino
+        </label>
+        <label>
+          <input type="radio" formControlName="sexo" value="Femenino"> Femenino
+        </label>
+  
+        <button type="submit">Imprimir</button>
+      </form>
+    </div>
+  
+    <div class="right" *ngIf="edad !== null && signoChino">
+      <h3>Resultado:</h3>
+      <p>Hola {{ formulario.get('nombre')?.value }} {{ formulario.get('apaterno')?.value }} {{ formulario.get('amaterno')?.value }}</p>
+      <p>Tienes {{ edad }} años</p>
+      <p>Tu signo chino es {{ signoChino }}</p>
+      <img *ngIf="signoImagen" [src]="signoImagen" alt="{{ signoChino }}">
+    </div>
+  </div>
+  

@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: 'Lobster', cursive;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #8c77e1;
+    border-radius: 10px;
+    background-color: #e4c6e2;
+}
+
+.left, .right {
+    width: 48%;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #520000;
+    font-family: 'Lobster', cursive;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+form input[type="text"],
+form input[type="number"],
+form input[type="radio"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 0px solid #ccc;
+    border-radius: 20px;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 50px;
+    padding: 10px 3px;
+    border: none;
+    border-radius: 1px;
+    background-color: #860f50;
+    color: rgb(139, 172, 237);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a41a4f;
+}
+
+.result {
+    text-align: center;
+}
+
+.result img, .right img {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    margin-top: 50px;
+    font-family: 'Lobster', cursive;
+}
